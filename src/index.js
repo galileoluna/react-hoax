@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import * as apiCalls from './api/apiCalls'
+
 import { UserSignupPage } from './pages/UserSignupPage';
 
+const actions ={
+  postSignup: apiCalls.signup
+}
+
 ReactDOM.render(
- <UserSignupPage />,
+ <UserSignupPage  actions={ actions}/>,
   document.getElementById('root')
 );
 
