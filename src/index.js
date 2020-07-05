@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { UserSignupPage } from './pages/UserSignupPage';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <UserSignupPage />,
   document.getElementById('root')
 );
 
